@@ -6,10 +6,11 @@ tar --exclude=".*" \
 	--exclude="*.md" \
 	--exclude="log.txt" \
 	--exclude="version-template.js" \
-	--exclude="docs/*" \
-	--exclude="matrixssl/*" \
-	--exclude="over/*" \
+	--exclude="docs*" \
+	--exclude="matrixssl*" \
+	--exclude="over*" \
 	--exclude="asptest.asp" \
+	--exclude="makeversion.sh" \
 	-phcvf webs-binary-hl3104jd.tar -C webs-binary-hl3104jd mnt
 
 
@@ -18,8 +19,9 @@ tar --exclude=".*" \
 	--exclude="*.md" \
 	--exclude="log.txt" \
 	--exclude="version-template.js" \
-	--exclude="docs/*" \
-	--exclude="matrixssl/*" \
-	--exclude="over/*" \
+	--exclude="docs*" \
+	--exclude="matrixssl*" \
+	--exclude="over*" \
 	--exclude="asptest.asp" \
+	--exclude="makeversion.sh" \
 	-phcvf webs-binary-hl3104ha.tar -C webs-binary-hl3104ha mnt
