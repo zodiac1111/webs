@@ -1,0 +1,11 @@
+安装步骤：
+
+1 上传
+  将 webs-jd.tar 文件通过ftp上传到终端 /mnt/nor 目录下
+
+2 解压
+  通过telnet登录到终端，运行(命令命令全部在一行上输入,没有换行,可以复制/粘贴)：
+ 
+  killall webs ; tar -xf /mnt/nor/webs-jd.tar -C / && rm /mnt/nor/webs-jd.tar && reboot	
+
+  等待片刻,终端自动重启即可。
