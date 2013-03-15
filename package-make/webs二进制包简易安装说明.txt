@@ -14,10 +14,10 @@
 
 
 hl3104ha终端:
-  killall webs ; tar -xf /mnt/nor/webs-binary-hl3104ha.tar -C / && rm /mnt/nor/webs-binary-hl3104ha.tar && reboot	
+  killall webs ; tar -xvf /mnt/nor/webs-binary-hl3104ha.tar -C / && rm /mnt/nor/webs-binary-hl3104ha.tar && reboot	
 
 hl3104jd终端:
-  killall webs ; tar -xf /mnt/nor/webs-binary-hl3104jd.tar -C / && rm /mnt/nor/webs-binary-hl3104jd.tar && reboot	
+  killall webs ; tar -xvf /mnt/nor/webs-binary-hl3104jd.tar -C / && rm /mnt/nor/webs-binary-hl3104jd.tar && reboot	
 
 
 
