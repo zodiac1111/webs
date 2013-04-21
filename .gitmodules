@@ -1,0 +1,6 @@
+[submodule "goahead"]
+    path = goahead
+    url = git@github.com:zodiac1111/goahead.git
+[submodule "www"]
+    path = www
+    url = git@github.com:zodiac1111/www.git
