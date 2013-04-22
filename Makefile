@@ -1,3 +1,6 @@
+all:binary
+default:binary
+
 #自动建立文件目录结构,需要2个参数:
 #goahead_root_dir 服务器项目根目录
 #www_root_dir 客户端项目根目录
@@ -18,3 +21,5 @@ binary:
 #简单的打包, 用于开发
 tar:
 	tar phczvf ../webs-1.2-src.tar *
+clean:
+	rm -f out/*
