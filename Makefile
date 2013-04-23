@@ -20,7 +20,8 @@ install-ha:
 	make -C package-make/ install-ha
 install-jd:
 	make -C package-make/ install-jd
-
+compile:
+	make -C goahead/LINUX/ all
 #用户开发的包,暂时放在../目录
 #简单的源代码包, 用于开发
 tar:
