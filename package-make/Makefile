@@ -6,7 +6,7 @@ binary:all
 #用户名,密码ip等都是由顶级makefile导出的.
 install:
 	lftp -u $(user),$(passwd) $(ip) \
-	-e "put ../out/$(file)  ;quit" 
+	-e "put ../out/$(file) $(upload_dir)  ;quit" 
 
 install-ha:
 	lftp -u $(user),$(passwd) $(ip) \
