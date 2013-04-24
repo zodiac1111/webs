@@ -14,7 +14,7 @@
 
 * goahead 服务器端代码,c语言编写
 * www 客户端代码,html css js
-* package-make 生成二进制包,用于web在线升级或者使用ftp上传升级
+* package-make 生成二进制包,用于web在线升级或者使用ftp上传安装/升级
 * out 输出目录
 
 # 简单编译打包安装
