@@ -31,7 +31,7 @@ compile:
 #用户开发的包,暂时放在../目录
 #简单的源代码包, 用于开发
 tar:
-	tar phczvf ../webs-1.2-src.tar.gz *
+	tar pczvf ../webs-1.2-src.tar.gz *
 clean:
 	make -C goahead/ clean
 	rm -f out/*
