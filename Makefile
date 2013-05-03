@@ -32,6 +32,7 @@ compile:
 #简单的源代码包, 用于开发
 tar:
 	tar pczvf ../webs-1.2-src.tar.gz *
+	echo -e "\033[32m生成: ../webs-1.2-src.tar.gz \033[0m"
 clean:
 	make -C goahead/ clean
 	rm -f out/*
