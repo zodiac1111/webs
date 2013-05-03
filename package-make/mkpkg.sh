@@ -43,6 +43,17 @@ tar --exclude=".*" \
 	--exclude="makeversion.sh" \
 	-phzcvf ../out/webs-binary-hl3104ha.tar.gz -C webs-binary-hl3104ha mnt
 
+tar --exclude=".*" \
+	--exclude="trace.txt" \
+	--exclude="*.md" \
+	--exclude="log.txt" \
+	--exclude="version-template.js" \
+	--exclude="docs*" \
+	--exclude="matrixssl*" \
+	--exclude="over*" \
+	--exclude="asptest.asp" \
+	--exclude="makeversion.sh" \
+	-phzcvf ../out/webs-binary-hl3104ja.tar.gz -C webs-binary-hl3104ja mnt
 #自动传输
 #lftp -u anonymous,holley 192.168.1.151\
 #	-e "put webs-binary-hl3104ha.tar.gz -o nor/ ;quit" 

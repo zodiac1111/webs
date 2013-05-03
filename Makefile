@@ -1,7 +1,7 @@
 #顶级Makefile文件主要用于安装
 # 第一目标:生成二进制包,用的最多
-all:binary
 default:binary
+all:compile binary
 binary:
 	make -C package-make/ binary
 
