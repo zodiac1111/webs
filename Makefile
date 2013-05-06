@@ -22,7 +22,8 @@ install-jd:
 	make -C package-make/ install-jd
 #对于1.5版本,ftp主目录不可写,需要指定ftp上传路径
 install-old:
-	make -C package-make/ install upload_dir="-o /mnt/nor"
+	make -C package-make/ install upload_dir="-o /mnt/nor/" \
+		user=root passwd=holley
 
 # 编译 2.3版本,1.5需要指定编译器和编译环境
 compile:
