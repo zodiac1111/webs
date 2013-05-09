@@ -1,6 +1,6 @@
 #顶级Makefile文件主要用于安装
 # 第一目标:生成二进制包,用的最多
-default:binary
+default:all
 all:compile binary
 binary:
 	make -C package-make/ binary
@@ -23,7 +23,7 @@ install-jd:
 #对于1.5版本,ftp主目录不可写,需要指定ftp上传路径
 install-old:
 	make -C package-make/ install upload_dir="-o /mnt/nor/" \
-		user=root passwd=holley
+		user=root passwd=linux
 
 # 编译 2.3版本,1.5需要指定编译器和编译环境
 compile:
@@ -31,9 +31,11 @@ compile:
 
 #用户开发的包,暂时放在../目录
 #简单的源代码包, 用于开发
-tar:
+tar:clean
 	tar pczvf ../webs-1.2-src.tar.gz *
 	echo -e "\033[32m生成: ../webs-1.2-src.tar.gz \033[0m"
+upload246:tar
+	scp ../webs-1.2-src.tar.gz admin@192.168.1.246:~/hl3104/webs/src
 clean:
 	make -C goahead/ clean
 	rm -f out/*
