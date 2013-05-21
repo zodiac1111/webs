@@ -8,7 +8,7 @@ webs项目 -- 使用浏览器通过以太网监控电能量采集终端
 	|-- goahead
 	|-- out
 	|-- package-make
-	|-- README.txt
+	|-- README.md
 	`-- www
 
 * goahead 服务器端代码,c语言编写
