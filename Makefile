@@ -32,7 +32,7 @@ compile:
 #用户开发的包,暂时放在../目录
 #简单的源代码包, 用于开发
 tar:clean
-	tar pczvf ../webs-1.2-src.tar.gz *
+	tar pczvf ../webs-1.2-src.tar.gz .[!.]* *
 	echo -e "\033[32m生成: ../webs-1.2-src.tar.gz \033[0m"
 upload246:tar
 	scp ../webs-1.2-src.tar.gz admin@192.168.1.246:~/hl3104/webs/src
