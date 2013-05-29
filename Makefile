@@ -43,5 +43,5 @@ version:
 	make -C goahead/ version
 	make -C www/ version
 
-#一键生成包+可选的上传包,开发代码时用的做多
+#一键生成包+可选的上传包,开发代码时用的最多
 onekeymake:version compile binary
